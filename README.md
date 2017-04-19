@@ -1,2 +1,2 @@
-# twitch-tv
+# Twitch TV
 FCC Intermediate Project
