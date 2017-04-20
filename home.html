@@ -15,8 +15,46 @@
     <![endif]-->
   </head>
   <body>
-    <h1>Twitch TV</h1>
-    
+    <div class="container">
+      <h1 class="text-center">Twitch TV</h1>
+      <div class="wrapper">
+        <div class="row">
+          <!-- left nav -->
+          <div class="col-xs-3 left-nav">
+            <div class="box text-center myMargin active">
+              <p>All</p>
+            </div>
+            <div class="box text-center" id="online">
+              <p>Online</p>
+            </div>
+            <div class="box text-center" id="offline">
+              <p>Offline</p>
+            </div>
+          </div>
+          <!-- right channel -->
+          <div class="col-xs-9 right-channel">
+            <div class="row">
+              <div class="col-xs-12">
+                <p class="active-nav-name">All</p>
+                <hr>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <input class="placeholderStyle" id="search-box" type="text" name="search" placeholder="Search Twitch User"/> 
+                <span class="fa fa-search" aria-hidden="true"></span>
+              </div>
+            </div>
+            <!-- result -->
+            <div class="row" id="displayArea">
+              <div class="col-xs-12" id="displayBox">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/twt.js"></script>
