@@ -1,0 +1,122 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ecf0f1;
+}
+
+.container {
+  max-width: 450px;
+}
+
+.wrapper {
+  width: 80%;
+  margin: auto;
+  background-color: white;
+}
+
+.left-nav {
+  background-color: #e67e22;
+  padding: 0;
+}
+
+.box {
+  padding: 16px 8px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.left-nav-margin {
+  margin-top: 32px;
+}
+
+div.box:hover {
+  background-color: #d35400;
+}
+
+.active {
+  background-color: #d35400;
+}
+
+.right-channel {
+  background-color: #e67e22;
+  color: #302f2e;
+}
+
+.active-nav-name {
+  font-size: 12px;
+  margin-top: 4px;
+  text-transform: capitalize;
+}
+
+input {
+  padding: 4px 26px;
+  border-radius: 15px;
+  width: 100%;
+  border: 3px solid #95a5a6;
+  outline: 0;
+  font-size: 12px;
+}
+
+input[type="text"].placeholderStyle::-webkit-input-placeholder {
+  color: #95a5a6;
+}
+
+span.fa {
+  float: left;
+  margin-left: 10px;
+  margin-top: -23px;
+  position: relative;
+  z-index: 2;
+  font-size: 14px;
+  color: #95a5a6;
+}
+
+#displayArea {
+  padding: 16px 0px;
+  box-sizing: border-box;
+}
+
+.display {
+  background-color: #3498db;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+#channel_logo {
+  display: inline-block;
+  width: 50px;
+}
+
+.channel {
+  height: 25px;
+  font-size: 14px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+
+#link {
+  color: #2c3e50;
+}
+
+.status-box {
+  height: 25px;
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+.streaming-status {
+  display: inline-block;
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+#icon {
+  width: 15px;
+  display: inline-block;
+}
