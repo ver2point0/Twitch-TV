@@ -32,11 +32,11 @@ function showAll() {
         var icon;
         var link = json.url;
         if (status === "Offline") {
-          icon = "/assets/sad-face.png";
+          icon = "https://cloud.githubusercontent.com/assets/12492121/25258334/88f8f504-260c-11e7-8502-ff289561792e.png";
         } else if (status === "Account does not exist!") {
-          icon = "/assets/not-available.png";
+          icon = "https://cloud.githubusercontent.com/assets/12492121/25258337/8901d99e-260c-11e7-8894-230f8c2da7c8.png";
         } else {
-          icon = "/assets/happy-face.png";
+          icon = "https://cloud.githubusercontent.com/assets/12492121/25258336/89001ab4-260c-11e7-9773-ca2eab1a49ac.png";
         }
         $("#displayBox").append('<div class="display" <div class="row"> <div class="col-xs-4"> <img id="channel_logo" src=" '
         + logo + '" alt="no-image"/></div> <div class="col-xs-8"> <div class="channel"> <a id="link" href=" '
@@ -60,7 +60,7 @@ function showOnline(name, status) {
         $.getJSON(createApi("channels", channel_name), function(json) {
         
         var logo = json.logo;
-        var icon = "/assets/happy-face.png";
+        var icon = "https://cloud.githubusercontent.com/assets/12492121/25258336/89001ab4-260c-11e7-9773-ca2eab1a49ac.png";
         var link = json.url;
         $("#displayBox").append('<div class="display" <div class="row"> <div class="col-xs-4"> <img id="channel_logo" src=" '
         + logo + '" alt="no-image"/></div> <div class="col-xs-8"> <div class="channel"> <a id="link" href=" '
@@ -85,7 +85,7 @@ function showOffline(name, status) {
         $.getJSON(createApi("channels", channel_name), function(json) {
         
         var logo = json.logo;
-        var icon = "/assets/sad-face.png";
+        var icon = "https://cloud.githubusercontent.com/assets/12492121/25258334/88f8f504-260c-11e7-8502-ff289561792e.png";
         var link = json.url;
         $("#displayBox").append('<div class="display" <div class="row"> <div class="col-xs-4"> <img id="channel_logo" src=" '
         + logo + '" alt="no-image"/></div> <div class="col-xs-8"> <div class="channel"> <a id="link" href=" '
@@ -113,8 +113,8 @@ $("#search-box").keypress(function(e) {
         var keyword_logo = data.logo;
         if (data.status === 422 || data.status === 404) {
           status = "Not Found";
-          var icon = "/assets/not-available.png";
-          var logo = "/assets/generic-avatar.gif";
+          var icon = "https://cloud.githubusercontent.com/assets/12492121/25258337/8901d99e-260c-11e7-8894-230f8c2da7c8.png";
+          var logo = "https://cloud.githubusercontent.com/assets/12492121/25258335/88fe11b0-260c-11e7-92d6-1c26db760125.gif";
           var link = "#";
           $("#displayBox").append('<div class="display" <div class="row"> <div class="col-xs-4"> <img id="channel_logo" src=" '
           + logo + '" alt="no-image"/></div> <div class="col-xs-8"> <div class="channel"> <a id="link" href=" '
@@ -134,11 +134,11 @@ $("#search-box").keypress(function(e) {
             }
             
             if (new_status === "Offline") {
-              icon = "/assets/sad-face.png";
+              icon = "https://cloud.githubusercontent.com/assets/12492121/25258334/88f8f504-260c-11e7-8502-ff289561792e.png";
             } else if (new_status === "Account does not exist!") {
-              icon = "/assets/not-available.png";
+              icon = "https://cloud.githubusercontent.com/assets/12492121/25258337/8901d99e-260c-11e7-8894-230f8c2da7c8.png";
             } else {
-              icon = "/assets/happy-face.png";
+              icon = "https://cloud.githubusercontent.com/assets/12492121/25258336/89001ab4-260c-11e7-9773-ca2eab1a49ac.png";
             }
             $("#displayBox").append('<div class="display" <div class="row"> <div class="col-xs-4"> <img id="channel_logo" src=" '
             + keyword_logo + '" alt="no-image"/></div> <div class="col-xs-8"> <div class="channel"> <a id="link" href=" '
